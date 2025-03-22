@@ -9,7 +9,7 @@ CREATE TABLE retail_sales
 	 gender VARCHAR(15),
 	 age INT,
 	 category VARCHAR(15),
-	 quantiy INT,
+	 quantity INT,
 	 price_per_unit	FLOAT,
 	 cogs FLOAT,
 	 total_sale FLOAT
@@ -42,7 +42,7 @@ WHERE
 	OR 
 	category IS NULL
 	OR 
-	quantiy IS NULL
+	quantity IS NULL
 	OR 
 	price_per_unit IS NULL
 	OR 
@@ -62,7 +62,7 @@ WHERE
 	OR 
 	category IS NULL
 	OR 
-	quantiy IS NULL
+	quantity IS NULL
 	OR 
 	price_per_unit IS NULL
 	OR 
@@ -94,7 +94,7 @@ WHERE category ='Clothing'
 	AND
 	TO_CHAR(sale_date,'YYYY-MM')='2022-11'
 	AND 
-	quantiy>=4
+	quantity>=4
 
 --Q.3 Write a SQL Query to calculate the total sales for each category
 SELECT category,
